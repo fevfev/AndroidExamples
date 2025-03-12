@@ -145,6 +145,7 @@ fun ExpandableDescription(title: String, description: String, imageRes: Int) {
 }
 
 /** Универсальный шаблон экрана с верхней панелью и кнопкой "Назад" */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ScreenWithBack(title: String, navController: NavController, content: @Composable () -> Unit) {
     Scaffold(
@@ -171,6 +172,7 @@ fun ScreenWithBack(title: String, navController: NavController, content: @Compos
 }
 
 /** Главный экран с меню перехода к демонстрационным экранам */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HomeScreen(navController: NavController) {
     val screens = listOf(
@@ -215,6 +217,7 @@ fun HomeScreen(navController: NavController) {
 }
 
 /** Экран для демонстрации Scaffold */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ScaffoldScreenWithBack(navController: NavController) {
     ScreenWithBack(title = "Scaffold", navController = navController) {
@@ -243,6 +246,7 @@ fun ScaffoldScreenWithBack(navController: NavController) {
 }
 
 /** Экран для демонстрации CenterAlignedTopAppBar */
+@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun TopAppBarScreenWithBack(navController: NavController) {
     ScreenWithBack(title = "CenterAlignedTopAppBar", navController = navController) {
