@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CV</string>
+    <string name="name">Иван Логинов</string>
+    <string name="title">Android Developer</string>
+    <string name="phone">+7 (800) 555-35-55</string>
+    <string name="email">i.student@margu.com</string>
+    <string name="website">www.margu.com</string>
+    <string name="profile_image">Ваш аватар</string>
+</resources>
